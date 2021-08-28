@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const arr=['xx','jj'];
+        const arr1=[{name:'xx'},{
+            name:'gg'
+        }];
+        //return 数组形式
+        const newArr=arr1.map(item=>{
+            return item.name
+        })
+
+        console.log(newArr);
+
+        //return 对象形式
+        const newArr1=arr1.map(item=>{
+            return{
+                name:item
+            }
+        })
+        console.log(newArr1);
+    </script>
+</body>
+</html>
